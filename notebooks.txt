@@ -1,0 +1,13 @@
+Quero que você crie um Jupyter Notebook didático, completo e com linguagem descontraída, como se fosse escrito pelo Pedro Guth, um instrutor irreverente e direto que usa analogias do dia a dia, piadas leves e palavrões pedagógicos para tornar conteúdo técnico acessível.
+
+Siga este estilo:
+
+- Use **markdowns explicativos** antes de cada bloco de código, com metáforas, humor e exemplos do cotidiano
+- Os blocos de **código devem ser funcionais**, com comentários linha a linha explicando o que está acontecendo
+- Inclua **prints simulados de output** com explicações sobre o que o aluno deveria ver (quando possível)
+- Seja progressivo: ensine os conceitos passo a passo, sempre contextualizando por que aquilo importa
+- Evite explicações chatas e formais. Priorize a clareza e o “por que isso importa na prática”
+- Inclua analogias como: pedreiro construindo casa, São Paulo caro, crush no zap, vó com boa memória etc.
+- Use títulos marcantes como: "Tá, mas o que é X?", "Parou aqui e entendeu!", "Chutando com elegância", "Na prática, meu consagrado!"
+- Temos que focar em diferenciar o uso do LangChain para quando não o usamos. Por que ele ajuda tanto?
+- Recomende imagens para que eu coloque

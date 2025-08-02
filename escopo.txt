@@ -1,0 +1,121 @@
+## �� **Escopo do Curso: "LangChain - Construindo Apps Inteligentes do Zero"**
+
+### **Módulo 1: Introdução ao LangChain - O Quebra-Cabeça da IA**
+- **Aula 1.1**: "O que é LangChain e por que todo mundo tá falando disso?"
+  - Analogia: LangChain como um "Lego da IA" - você junta peças e faz coisas incríveis
+  - Por que LangChain é tipo um "pedreiro inteligente" que empilha funcionalidades
+  - Exemplos reais: ChatGPT vs LangChain (diferenças práticas)
+
+- **Aula 1.2**: "Setup do Ambiente - Preparando o Terreno"
+  - Instalação e configuração (sem complicação)
+  - Primeiro "Hello World" com LangChain
+  - Analogia: Como aprender a dirigir - primeiro você liga o carro
+
+### **Módulo 2: Prompts - A Arte de Falar com IA**
+- **Aula 2.1**: "Prompts Básicos - Como Pedir as Coisas Direito"
+  - Analogia: Pedir comida no restaurante vs pedir para a IA
+  - Templates de prompts (como receitas de bolo)
+  - Exemplos práticos: tradução, resumo, análise
+
+- **Aula 2.2**: "Prompts Avançados - O Poder dos Few-Shot Examples"
+  - Analogia: Ensinar alguém a cozinhar mostrando exemplos
+  - Chain of Thought (pensar em voz alta)
+  - Prompts estruturados (como formulários inteligentes)
+
+### **Módulo 3: Chains - Conectando as Peças**
+- **Aula 3.1**: "Chains Simples - Uma Coisa Leva à Outra"
+  - Analogia: Linha de produção de uma fábrica
+  - LLMChain, SimpleSequentialChain
+  - Exemplo prático: Análise de sentimento + sugestão de resposta
+
+- **Aula 3.2**: "Chains Complexas - O Poder da Composição"
+  - Analogia: Receita de bolo com múltiplos passos
+  - RouterChain (como um garçom que decide onde levar seu pedido)
+  - Exemplo: Sistema de atendimento ao cliente inteligente
+
+### **Módulo 4: Memory - Lembrando das Conversas**
+- **Aula 4.1**: "Memory Básica - Não Esqueça do Cliente"
+  - Analogia: Garçom que lembra do seu pedido favorito
+  - ConversationBufferMemory, ConversationSummaryMemory
+  - Exemplo: Chatbot que lembra do histórico
+
+- **Aula 4.2**: "Memory Avançada - Contexto Inteligente"
+  - Analogia: Amigo que lembra de tudo que você falou
+  - VectorStoreMemory, EntityMemory
+  - Exemplo: Assistente pessoal que conhece você
+
+### **Módulo 5: Agents - Os Funcionários Inteligentes**
+- **Aula 5.1**: "Agents Básicos - Delegando Tarefas"
+  - Analogia: Chefe que delega trabalho para funcionários especializados
+  - Zero-shot ReAct, Structured ReAct
+  - Exemplo: Agente que pesquisa e resume notícias
+
+- **Aula 5.2**: "Agents Avançados - Ferramentas e Tomada de Decisão"
+  - Analogia: Swiss Army Knife da IA
+  - Custom tools, agent executors
+  - Exemplo: Agente financeiro que analisa investimentos
+
+### **Módulo 6: Document Loaders e Vector Stores**
+- **Aula 6.1**: "Carregando Documentos - De PDF a YouTube"
+  - Analogia: Biblioteca digital que lê tudo
+  - PDF, CSV, YouTube, websites
+  - Exemplo: Análise de documentos da empresa
+
+- **Aula 6.2**: "Vector Stores - A Memória de Longo Prazo"
+  - Analogia: Cérebro que organiza informações por similaridade
+  - Chroma, Pinecone, FAISS
+  - Exemplo: Sistema de busca inteligente
+
+### **Módulo 7: RAG (Retrieval Augmented Generation)**
+- **Aula 7.1**: "RAG Básico - IA que Sabe o que Não Sabe"
+  - Analogia: Estudante que consulta livros antes de responder
+  - Document loaders + vector stores + LLM
+  - Exemplo: Chatbot com base de conhecimento
+
+- **Aula 7.2**: "RAG Avançado - Otimizando as Respostas"
+  - Analogia: Pesquisador experiente que sabe onde procurar
+  - Re-ranking, multi-retrieval
+  - Exemplo: Sistema de suporte técnico inteligente
+
+### **Módulo 8: Projetos Práticos**
+- **Aula 8.1**: "Projeto 1: Chatbot para E-commerce"
+  - Sistema completo de atendimento
+  - Integração com base de produtos
+  - Deploy básico
+
+- **Aula 8.2**: "Projeto 2: Assistente de Estudos"
+  - Análise de documentos acadêmicos
+  - Geração de resumos e flashcards
+  - Sistema de perguntas e respostas
+
+### **Módulo 9: Deploy e Produção**
+- **Aula 9.1**: "Deploy Básico - Colocando na Rua"
+  - Analogia: Abrir um restaurante (preparação, teste, inauguração)
+  - Streamlit, Gradio, FastAPI
+  - Exemplo: Deploy de um chatbot
+
+- **Aula 9.2**: "Monitoramento e Otimização"
+  - Analogia: Manter um carro funcionando bem
+  - Logs, métricas, custos
+  - Boas práticas de produção
+
+### **Módulo 10: Tópicos Avançados**
+- **Aula 10.1**: "LangGraph - Fluxos Complexos"
+  - Analogia: Plano de metrô da IA
+  - State management, loops condicionais
+  - Exemplo: Sistema de workflow inteligente
+
+- **Aula 10.2**: "Integração com APIs Externas"
+  - Analogia: Conectar diferentes serviços (como Uber + Google Maps)
+  - APIs de pagamento, email, CRM
+  - Exemplo: Sistema de automação empresarial
+
+---
+
+## **�� Características do Curso:**
+
+1. **Progressão Natural**: Do básico ao avançado, sem pular etapas
+2. **Projetos Práticos**: Cada módulo tem exemplos reais e funcionais
+3. **Analogias do Dia a Dia**: Relacionando conceitos técnicos com situações conhecidas
+4. **Código Limpo**: Exemplos que funcionam de verdade
+5. **Foco em Resultados**: Aluno sai sabendo fazer coisas úteis
