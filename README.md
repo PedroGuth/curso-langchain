@@ -4,6 +4,8 @@
 
 **Criado por Pedro Guth** - Aprenda LangChain de forma descontraída, com analogias do dia a dia e projetos reais que funcionam!
 
+**🚀 Google Colab - Funciona no navegador, 100% gratuito!**
+
 ---
 
 ## **🔥 O que você vai aprender:**
@@ -30,6 +32,7 @@
 - **Analogias do dia a dia** - "Lego da IA", "pedreiro inteligente"
 - **Piadas leves** - aprendizado divertido
 - **Exemplos práticos** - código que funciona de verdade
+- **Google Colab** - funciona no navegador, sem instalação
 
 ### **✅ Progressão natural:**
 - **Módulo 1-3**: Fundamentos (prompts, chains, memory)
@@ -91,17 +94,19 @@
 
 ---
 
-## **🎯 Para quem é este curso:**
+## **🎯 Para quem é este curso (Google Colab - 100% GRATUITO!):**
 
 ### **✅ Iniciantes em IA:**
 - Sem experiência prévia necessária
 - Aprenda do zero com exemplos práticos
 - Conceitos explicados de forma simples
+- **Google Colab - sem instalação necessária**
 
 ### **✅ Desenvolvedores Python:**
 - Aproveite seu conhecimento existente
 - Aprenda a integrar IA em seus projetos
 - Expanda suas habilidades
+- **GPU gratuita disponível no Colab**
 
 ### **✅ Empreendedores:**
 - Crie produtos inovadores com IA
@@ -112,24 +117,38 @@
 - Prepare-se para o mercado de trabalho
 - Construa um portfólio impressionante
 - Aprenda tecnologias do futuro
+- **Compartilhamento fácil de notebooks**
 
 ---
 
-## **🚀 Como começar em 5 minutos:**
+## **🚀 Como começar em 5 minutos (Google Colab - 100% GRATUITO!):**
 
-### **1. Instale as dependências:**
-```bash
-pip install langchain openai python-dotenv langchain-community langchain-core
-```
+### **1. Abra o Google Colab:**
+- Vá para [colab.research.google.com](https://colab.research.google.com)
+- Faça login com sua conta Google
+- **100% gratuito e funciona no navegador!**
 
-### **2. Configure sua API key:**
-- Crie conta na [OpenAI](https://platform.openai.com/)
-- Gere uma API key
-- Crie arquivo `.env` com: `OPENAI_API_KEY=sua_chave_aqui`
+### **2. Escolha sua opção:**
+
+#### **🎭 Opção A: Mock LLM (Recomendado para Iniciantes)**
+- **Funciona imediatamente**
+- Respostas simuladas para aprender
+- **100% gratuito, sem configuração**
+
+#### **🌐 Opção B: Hugging Face (Modelos Reais)**
+- Crie conta em [huggingface.co](https://huggingface.co)
+- Gere token gratuito
+- **30.000 requisições/mês gratuitas**
+
+#### **🔑 Opção C: OpenAI (Para Quem Quiser)**
+- Crie conta em [platform.openai.com](https://platform.openai.com)
+- Gere API key
+- **Melhor qualidade, custo por uso**
 
 ### **3. Comece a aprender:**
-- Abra o notebook `01_introducao_langchain.ipynb`
-- Execute os códigos
+- Abra o notebook `00_setup_colab.ipynb` no Colab
+- Configure sua opção preferida
+- Depois abra `01_introducao_langchain.ipynb`
 - Divirta-se criando sua primeira IA!
 
 ---
@@ -161,7 +180,7 @@ pip install langchain openai python-dotenv langchain-community langchain-core
 
 ### **💸 O que você investe:**
 - Tempo: ~20-30 horas de estudo
-- API OpenAI: ~$5-20 (dependendo do uso)
+- **Custo: $0 (100% gratuito!)**
 - Curiosidade e vontade de aprender
 
 ### **🚀 O que você ganha:**
@@ -188,6 +207,7 @@ Após completar todos os módulos e projetos, você terá:
 - **Explicações claras** - sem jargões desnecessários
 - **Progressão natural** - sem pular etapas
 - **Foco em resultados** - você sai sabendo fazer
+- **Google Colab** - backup automático no Google Drive
 
 ---
 

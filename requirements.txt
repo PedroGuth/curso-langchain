@@ -1,10 +1,23 @@
 # Dependências principais do curso LangChain
 langchain>=0.1.0
-langchain-openai>=0.0.5
 langchain-community>=0.0.10
 langchain-core>=0.1.0
-openai>=1.0.0
 python-dotenv>=1.0.0
+
+# ===== OPÇÕES GRATUITAS (ESCOLHA UMA) =====
+
+# Opção 1: Ollama (modelos locais - 100% gratuito)
+# Instale Ollama em: https://ollama.ai
+# Depois execute: ollama pull llama2
+
+# Opção 2: Hugging Face (modelos na nuvem - gratuito com limites)
+huggingface_hub>=0.19.0
+
+# Opção 3: OpenAI (pago - melhor qualidade)
+# langchain-openai>=0.0.5
+# openai>=1.0.0
+
+# ===== DEPENDÊNCIAS OPCIONAIS =====
 
 # Para document loaders
 pypdf>=3.17.0
