@@ -229,34 +229,12 @@
 - Habilidades para criar produtos inovadores
 - Diferencial competitivo no mercado
 - Base sólida para LangChain v1.0
-
----
-
-## **🎓 Certificado de Conclusão:**
-
-Após completar todos os 17 módulos e projetos, você terá:
-- **Conhecimento prático** em LangChain v0.3
-- **Projetos funcionais** no portfólio
-- **Confiança** para criar apps de IA
-- **Base sólida** para migrar para v1.0
-- **Experiência** com deploy e produção
-
----
-
-## **📞 Suporte e Comunidade:**
-
-- **Código testado** - todos os exemplos funcionam
-- **Explicações claras** - sem jargões desnecessários
-- **Progressão natural** - sem pular etapas
-- **Foco em resultados** - você sai sabendo fazer
-- **Google Colab** - backup automático no Google Drive
-- **Atualizações** - curso sempre atualizado
-
+  
 ---
 
 ## **🚀 Pronto para transformar suas ideias em realidade?**
 
-**Bora codar, meu consagrado!** 💪
+**Bora codar, meus lindos!** 💪
 
 *Este curso é para quem quer aprender IA de verdade, não só teoria. Aqui você vai construir coisas que funcionam e que podem mudar sua carreira.*
 
