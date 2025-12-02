@@ -132,7 +132,7 @@
 
 ---
 
-## **🎯 Para quem é este curso (Google Colab - 100% GRATUITO!):**
+## **🎯 Para quem é este curso:**
 
 ### **✅ Iniciantes em IA:**
 - Sem experiência prévia necessária
@@ -159,7 +159,7 @@
 
 ---
 
-## **🚀 Como começar em 5 minutos (Google Colab - 100% GRATUITO!):**
+## **🚀 Como começar em 5 minutos:**
 
 ### **1. Abra o Google Colab:**
 - Vá para [colab.research.google.com](https://colab.research.google.com)
@@ -171,7 +171,6 @@
 #### **🎭 Opção A: Gemini 2.0 Flash (Recomendado)**
 - **Funciona imediatamente**
 - Modelo gratuito do Google
-- **100% gratuito, sem configuração**
 
 #### **🌐 Opção B: Hugging Face (Modelos Reais)**
 - Crie conta em [huggingface.co](https://huggingface.co)
