@@ -1,262 +1,351 @@
-# 🚀 **Curso LangChain - Construindo Apps Inteligentes do Zero**
+# LangChain - Curso Atualizado para v1.0
 
-## **🎯 Transforme suas ideias em Apps Inteligentes em 17 módulos práticos**
-
-**Criado por Pedro Guth** - Aprenda LangChain de forma descontraída, com analogias do dia a dia e projetos reais que funcionam!
-
-**🚀 Google Colab - Funciona no navegador, 100% gratuito!**
-
----
-
-## **🔥 O que você vai aprender:**
-
-### **📱 Projetos que você vai construir:**
-- **Assistente de Análise de Documentos com RAG** - Sistema completo de análise inteligente
-- **Sistema Multi-Agentes** - Equipe virtual de consultores analisando documentos
-- **Apps Web com Streamlit** - Deploy profissional de suas aplicações
-- **Agentes Inteligentes** - Funcionários virtuais que fazem tarefas complexas
-
-### **🛠️ Tecnologias que você vai dominar:**
-- **LangChain v0.3** - O framework mais popular para apps de IA
-- **Gemini 2.0 Flash** - Modelo principal do curso (gratuito!)
-- **OpenAI GPT** - Integração com os melhores modelos de linguagem
-- **Vector Stores** - Sistemas de busca inteligente
-- **Streamlit** - Interfaces web para seus apps
-- **Deploy em Produção** - Coloque seus projetos no ar
-- **LangGraph & LangSmith** - Tópicos avançados
+> ⚠️ **ATUALIZAÇÃO PARA LANGCHAIN v1.0**
+>
+> Este curso foi originalmente desenvolvido com LangChain v0.3 e **atualizado para a versão estável v1.0**.
+>
+> **Mudanças principais aplicadas:**
+> - `langchain.schema` → `langchain.messages` / `langchain_core.messages`
+> - `langchain.text_splitter` → `langchain_text_splitters`
+> - `langchain.document_loaders` → `langchain_community.document_loaders`
+> - `langchain.prompts` → `langchain_core.prompts`
+> - `langchain_core.pydantic_v1` → `pydantic` (Pydantic v2)
+> - `RetrievalQA` → LCEL com `retriever | format_docs`
+> - `create_tool_calling_agent` + `AgentExecutor` → `create_agent`
+> - `@validator` → `@field_validator` (Pydantic v2)
+> - `.get_relevant_documents()` → `.invoke()`
+> - `chat([mensagem])` → `chat.invoke([mensagem])`
+>
+> O código v0.3 original está **comentado** em cada célula para referência.
 
 ---
 
-## **🎨 Por que este curso é diferente:**
+## Descrição
+Curso completo e prático com 17 módulos sobre LangChain v1.0. Desenvolvido por Pedro Nunes Guth, este curso apresenta os fundamentos essenciais para dominar a framework mais popular para desenvolvimento de aplicações com Large Language Models, desde conceitos básicos até implementações avançadas em produção.
 
-### **✅ Aprenda com o estilo do descontraído:**
-- **Linguagem descontraída** - sem formalidade chata
-- **Exemplos práticos** - código que funciona de verdade
-- **Google Colab** - funciona no navegador, sem instalação
+## Objetivos de Aprendizagem
 
-### **✅ Progressão natural:**
-- **Módulos 1-7**: Fundamentos (ChatModels, LCEL, Prompts, Chains, Memory)
-- **Módulos 8-11**: Funcionalidades avançadas (Document Loaders, RAG, Agents)
-- **Módulos 12-14**: Projetos reais e deploy
-- **Módulos 15-17**: Tópicos avançados (v1.0, LangGraph, LangSmith)
+Ao final deste curso, você será capaz de:
+- ✅ Compreender o que é LangChain e sua importância no ecossistema de IA
+- ✅ Trabalhar com ChatModels e diferentes provedores de LLMs
+- ✅ Dominar Runnables e LCEL (LangChain Expression Language)
+- ✅ Criar e gerenciar Prompt Templates e Output Parsers
+- ✅ Construir Chains complexas para sequenciar operações
+- ✅ Implementar sistemas de memória para conversas contextuais
+- ✅ Carregar e processar documentos com loaders e splitters
+- ✅ Trabalhar com Vector Stores e Embeddings
+- ✅ Implementar sistemas RAG (Retrieval-Augmented Generation)
+- ✅ Criar Agents inteligentes com Tools customizadas
+- ✅ Desenvolver projetos práticos completos
+- ✅ Fazer deploy de aplicações com Streamlit
+- ✅ Comparar versões e entender evolução do LangChain
+- ✅ Explorar LangGraph para fluxos complexos
+- ✅ Utilizar LangSmith para monitoramento e debugging
 
----
+## Estrutura do Curso
 
-## **📚 Módulos do Curso:**
+### Módulo 1: Introdução - O que é LangChain e Por que Ele Ajuda Muito
+**Conceitos abordados:**
+- Definição e importância do LangChain
+- Arquitetura e componentes principais
+- Casos de uso e aplicações práticas
+- Configuração do ambiente de desenvolvimento
 
-### **🚀 Módulo 1: Introdução - O que é LangChain**
-- O que é LangChain e por que é revolucionário
-- Setup do ambiente em 5 minutos
-- Por que LangChain é o "WordPress da IA"
-
-### **🤖 Módulo 2: ChatModels - O Coração da IA**
-- Gemini 2.0 Flash (nosso queridinho do curso)
-- Outras opções: OpenAI, Claude, Ollama
-- Como trocar de modelo sem quebrar o código
-- Streaming e parâmetros importantes
-
-### **🔗 Módulo 3: Runnables e LCEL**
-- LangChain Expression Language (LCEL)
-- Como conectar componentes de forma elegante
-- Pipes e composição de funcionalidades
-
-### **💬 Módulo 4: Prompt Templates**
-- Como pedir as coisas direito para a IA
-- Templates dinâmicos e reutilizáveis
-- Few-shot examples e Chain of Thought
-
-### **📤 Módulo 5: Output Parsers**
-- Como estruturar as respostas da IA
-- Parsers para JSON, listas, e formatos customizados
-- Validação e tratamento de erros
-
-### **🔗 Módulo 6: Chains - Conectando as Peças**
-- Chains simples e complexas
-- Composição de funcionalidades
-- RouterChain (como um garçom inteligente)
-
-### **🧠 Módulo 7: Memory Systems**
-- Memória de conversas
-- Diferentes tipos de memory
-- Contexto inteligente e persistência
-
-### **📄 Módulo 8: Document Loading e Splitters**
-- Carregamento de PDFs, CSVs, YouTube
-- Como dividir documentos inteligentemente
-- Processamento de diferentes formatos
-
-### **🔍 Módulo 9: Vector Store e Embeddings**
-- Como transformar texto em números
-- Vector stores (memória de longo prazo)
-- Busca semântica inteligente
-
-### **🎯 Módulo 10: RAG Implementation**
-- Retrieval Augmented Generation
-- Sistemas de busca inteligente
-- Otimização de respostas com contexto
-
-### **🤖 Módulo 11: Agents e Tools**
-- Agents básicos e avançados
-- Ferramentas customizadas
-- Tomada de decisão autônoma
-
-### **🚀 Módulo 12: Projeto Final 1 - Assistente de Análise de Documentos**
-- **Projeto completo** com RAG e Agents
-- Análise inteligente de documentos
-- Sistema de perguntas e respostas
-
-### **⚡ Módulo 13: Projeto Final 2 - Sistema Multi-Agentes**
-- **Sistema avançado** com múltiplos agentes
-- Extração de insights automáticos
-- Geração de relatórios e visualizações
-
-### **🌐 Módulo 14: Deploy com Streamlit**
-- Transformar projetos em apps web
-- Deploy no Streamlit Cloud (gratuito!)
-- Configuração de segurança e monitoramento
-
-### **🔄 Módulo 15: LangChain v1.0 - Comparações**
-- Diferenças entre v0.3 e v1.0
-- Migração de código
-- Novas funcionalidades
-
-### **📊 Módulo 16: LangGraph - Fluxos Complexos**
-- Criação de fluxos avançados
-- Workflows com múltiplos agentes
-- Controle de estado e decisões
-
-### **🔧 Módulo 17: LangSmith - Monitoramento**
-- Observabilidade de aplicações
-- Debugging e otimização
-- Métricas e performance
+**Aplicações práticas:**
+- Setup inicial do ambiente LangChain
+- Primeiros testes com a framework
+- Compreensão do ecossistema de IA
 
 ---
 
-## **🎯 Para quem é este curso:**
+### Módulo 2: ChatModels, Runnables e LCEL - Os Ingredientes Mágicos
+**Conceitos abordados:**
+- ChatModels e diferentes provedores (Gemini, OpenAI, Anthropic)
+- Conceito de Runnables como base do LangChain v1.0
+- LCEL (LangChain Expression Language)
+- Configuração de APIs e modelos
 
-### **✅ Iniciantes em IA:**
-- Sem experiência prévia necessária
-- Aprenda do zero com exemplos práticos
-- Conceitos explicados de forma simples
-- **Google Colab - sem instalação necessária**
-
-### **✅ Desenvolvedores Python:**
-- Aproveite seu conhecimento existente
-- Aprenda a integrar IA em seus projetos
-- Expanda suas habilidades
-- **GPU gratuita disponível no Colab**
-
-### **✅ Empreendedores:**
-- Crie produtos inovadores com IA
-- Automatize processos da sua empresa
-- Diferencie-se da concorrência
-
-### **✅ Estudantes:**
-- Prepare-se para o mercado de trabalho
-- Construa um portfólio impressionante
-- Aprenda tecnologias do futuro
-- **Compartilhamento fácil de notebooks**
+**Aplicações práticas:**
+- Integração com diferentes LLMs
+- Criação de pipelines básicos
+- Implementação de fluxos de processamento
 
 ---
 
-## **🚀 Como começar em 5 minutos:**
+### Módulo 3: Prompt Templates e Output Parsers - Estruturando Entrada e Saída
+**Conceitos abordados:**
+- Criação de templates de prompts reutilizáveis
+- Output parsers para estruturar respostas
+- Few-shot learning e example selectors
+- Validação e formatação de saídas
 
-### **1. Abra o Google Colab:**
-- Vá para [colab.research.google.com](https://colab.research.google.com)
-- Faça login com sua conta Google
-- **100% gratuito e funciona no navegador!**
-
-### **2. Escolha sua opção:**
-
-#### **🎭 Opção A: Gemini 2.0 Flash (Recomendado)**
-- **Funciona imediatamente**
-- Modelo gratuito do Google
-
-#### **🌐 Opção B: Hugging Face (Modelos Reais)**
-- Crie conta em [huggingface.co](https://huggingface.co)
-- Gere token gratuito
-- **30.000 requisições/mês gratuitas**
-
-#### **🔑 Opção C: OpenAI (Para Quem Quiser)**
-- Crie conta em [platform.openai.com](https://platform.openai.com)
-- Gere API key
-- **Melhor qualidade, custo por uso**
-
-### **3. Comece a aprender:**
-- Abra o notebook `modulo-01-introdução.ipynb` no Colab
-- Configure sua opção preferida
-- Depois abra `modulo-02-chatmodel.ipynb`
-- Divirta-se criando sua primeira IA!
+**Aplicações práticas:**
+- Desenvolvimento de prompts eficazes
+- Estruturação de respostas de LLMs
+- Criação de templates personalizados
 
 ---
 
-## **💡 O que você vai conseguir após o curso:**
+### Módulo 4: Chains - Conectando os Pontos da IA
+**Conceitos abordados:**
+- Conceito de Chains e sequenciamento
+- Tipos de chains (Sequential, Router, Custom)
+- Composição de componentes
+- Debugging e monitoramento de chains
 
-### **🎯 Habilidades Técnicas:**
-- Criar apps inteligentes com LangChain v0.3
-- Integrar IAs em seus projetos
-- Desenvolver sistemas RAG completos
-- Implementar agentes multi-funcionais
-- Fazer deploy de aplicações de IA
-- Monitorar e otimizar performance
-
-### **🎯 Projetos no Portfólio:**
-- Assistente de análise de documentos
-- Sistema multi-agentes inteligente
-- Apps web com Streamlit
-- Sistemas RAG completos
-
-### **🎯 Oportunidades de Carreira:**
-- Desenvolvedor de IA
-- Engenheiro de Machine Learning
-- Especialista em LLMs
-- Consultor de automação
-- Arquiteto de soluções de IA
+**Aplicações práticas:**
+- Construção de fluxos complexos
+- Integração de múltiplos componentes
+- Criação de pipelines personalizados
 
 ---
 
-## **💰 Investimento vs Retorno:**
+### Módulo 5: Memory Systems - A Memória dos Bots
+**Conceitos abordados:**
+- Por que LLMs são stateless
+- Tipos de memória (Buffer, Window, Summary)
+- Implementação de sistemas de memória
+- Gerenciamento de contexto conversacional
 
-### **💸 O que você investe:**
-- Tempo: ~25-35 horas de estudo
-- **Custo: $0 (100% gratuito!)**
-- Curiosidade e vontade de aprender
-
-### **🚀 O que você ganha:**
-- Conhecimento em uma das tecnologias mais quentes do mercado
-- Projetos reais no portfólio
-- Habilidades para criar produtos inovadores
-- Diferencial competitivo no mercado
-- Base sólida para LangChain v1.0
-  
----
-
-## **🚀 Pronto para transformar suas ideias em realidade?**
-
-**Bora codar, meus lindos!** 💪
-
-*Este curso é para quem quer aprender IA de verdade, não só teoria. Aqui você vai construir coisas que funcionam e que podem mudar sua carreira.*
+**Aplicações práticas:**
+- Criação de chatbots com memória
+- Implementação de assistentes contextuais
+- Gerenciamento de conversas longas
 
 ---
 
-**🎯 Comece agora mesmo e construa seu primeiro app inteligente!**
+### Módulo 6: Document Loading e Splitters - Processando Informações
+**Conceitos abordados:**
+- Document loaders para diferentes formatos
+- Text splitters e estratégias de divisão
+- Processamento de PDFs, textos e web pages
+- Otimização de chunks para RAG
 
-## **📁 Estrutura dos Notebooks:**
+**Aplicações práticas:**
+- Carregamento de documentos diversos
+- Preparação de dados para sistemas RAG
+- Processamento de grandes volumes de texto
 
-1. `modulo-01-introdução.ipynb` - Introdução ao LangChain
-2. `modulo-02-chatmodel.ipynb` - ChatModels e Gemini 2.0 Flash
-3. `modulo-03-runnables-e-lcel-notebook.ipynb` - Runnables e LCEL
-4. `modulo-04-prompt-template-notebook.ipynb` - Prompt Templates
-5. `modulo-05-outputparses-notebook.ipynb` - Output Parsers
-6. `modulo-06-chains-notebook.ipynb` - Chains
-7. `modulo-07-memory-systems-notebook.ipynb` - Memory Systems
-8. `modulo-08-document-loading-e-splitters-notebook.ipynb` - Document Loading
-9. `modulo-09-vector-store-e-embeddings-notebook.ipynb` - Vector Stores
-10. `modulo-10-rag-implementation-notebook.ipynb` - RAG Implementation
-11. `modulo-11-agents-e-tools-notebook.ipynb` - Agents e Tools
-12. `modulo-12-projeto-final-1-notebook.ipynb` - Projeto Final 1
-13. `modulo-13-projeto-final-2-notebook.ipynb` - Projeto Final 2
-14. `modulo-14-deploy-e-produção-com-streamlit-notebook.ipynb` - Deploy
-15. `modulo-15-refazendo-tudo-que-vimos-mas-na-versão-v1.0.ipynb` - v1.0
-16. `modulo-16-e-o-langgraph?-notebook.ipynb` - LangGraph
-17. `modulo-17-e-o-langsmith?-notebook.ipynb` - LangSmith
+---
+
+### Módulo 7: Vector Stores e Embeddings - Representando Conhecimento
+**Conceitos abordados:**
+- Conceito de embeddings vetoriais
+- Vector stores (FAISS, Chroma, Pinecone)
+- Similaridade semântica e busca vetorial
+- Otimização de armazenamento e busca
+
+**Aplicações práticas:**
+- Implementação de busca semântica
+- Criação de bases de conhecimento vetoriais
+- Otimização de performance de busca
+
+---
+
+### Módulo 8: RAG Implementation - Transformando Documentos em Conversas
+**Conceitos abordados:**
+- Arquitetura completa de sistemas RAG
+- Retrieval-Augmented Generation
+- Integração de componentes RAG
+- Otimização de qualidade de respostas
+
+**Aplicações práticas:**
+- Desenvolvimento de assistentes baseados em documentos
+- Criação de sistemas de Q&A inteligentes
+- Implementação de chatbots especializados
+
+---
+
+### Módulo 9: Agents e Tools - Quando a IA Ganha Superpoderes
+**Conceitos abordados:**
+- Conceito de Agents e Tools
+- ReAct (Reasoning + Acting)
+- Criação de ferramentas customizadas
+- Integração com APIs externas
+
+**Aplicações práticas:**
+- Desenvolvimento de assistentes autônomos
+- Criação de ferramentas especializadas
+- Implementação de agentes inteligentes
+
+---
+
+### Módulo 10: Projeto Final 1 - Primeira Aplicação Completa
+**Conceitos abordados:**
+- Integração de todos os conceitos aprendidos
+- Desenvolvimento de aplicação completa
+- Boas práticas de desenvolvimento
+- Estruturação de projetos
+
+**Aplicações práticas:**
+- Criação de projeto real com LangChain
+- Implementação de sistema completo
+- Demonstração de competências adquiridas
+
+---
+
+### Módulo 11: Projeto Final 2 - Aplicação Avançada
+**Conceitos abordados:**
+- Aplicações mais complexas
+- Integração de múltiplos componentes
+- Otimização de performance
+- Tratamento de erros e edge cases
+
+**Aplicações práticas:**
+- Desenvolvimento de aplicação avançada
+- Implementação de funcionalidades complexas
+- Consolidação de conhecimentos
+
+---
+
+### Módulo 12: Deploy e Produção com Streamlit - Da Ideia à Realidade
+**Conceitos abordados:**
+- Introdução ao Streamlit
+- Transformação de projetos em aplicações web
+- Deploy local e em nuvem
+- Boas práticas de produção
+
+**Aplicações práticas:**
+- Criação de interfaces web
+- Deploy de aplicações LangChain
+- Publicação de projetos
+
+---
+
+### Módulo 13: LangChain v1.0 vs v0.2 - Comparações e Evolução
+**Conceitos abordados:**
+- Diferenças entre versões
+- Evolução da framework
+- Migração entre versões
+- Melhores práticas por versão
+
+**Aplicações práticas:**
+- Comparação de implementações
+- Entendimento de evolução
+- Preparação para futuras versões
+
+---
+
+### Módulo 14: LangGraph - Quando o Agente Precisa de um GPS
+**Conceitos abordados:**
+- Conceito de LangGraph
+- Criação de fluxos complexos
+- Gerenciamento de estados
+- Coordenação de múltiplos agents
+
+**Aplicações práticas:**
+- Desenvolvimento de fluxos avançados
+- Implementação de workflows complexos
+- Criação de sistemas multi-agent
+
+---
+
+### Módulo 15: LangSmith - Monitoramento e Debugging
+**Conceitos abordados:**
+- Introdução ao LangSmith
+- Monitoramento de aplicações
+- Debugging e troubleshooting
+- Análise de performance
+
+**Aplicações práticas:**
+- Implementação de monitoramento
+- Debugging de aplicações
+- Otimização de performance
+
+---
+
+## Competências Desenvolvidas
+
+### 🔗 Fundamentos do LangChain
+- Compreensão profunda da framework LangChain v1.0
+- Domínio de Runnables e LCEL (LangChain Expression Language)
+- Trabalho com ChatModels e diferentes provedores de LLMs
+- Criação de Prompt Templates e Output Parsers
+
+### 🏗️ Arquitetura e Componentes
+- Construção de Chains complexas
+- Implementação de sistemas de memória
+- Trabalho com Document Loaders e Text Splitters
+- Integração de Vector Stores e Embeddings
+
+### 🤖 Sistemas Avançados
+- Implementação de sistemas RAG completos
+- Criação de Agents inteligentes com Tools
+- Desenvolvimento de fluxos com LangGraph
+- Monitoramento e debugging com LangSmith
+
+### 🚀 Deploy e Produção
+- Transformação de projetos em aplicações web
+- Deploy com Streamlit
+- Boas práticas de produção
+- Comparação entre versões do LangChain
+
+### 💻 Implementação Prática
+- Desenvolvimento de projetos completos
+- Integração de múltiplos componentes
+- Otimização de performance
+- Tratamento de erros e edge cases
+
+## Pré-requisitos
+
+- Conhecimento intermediário de Python
+- Familiaridade com conceitos básicos de machine learning
+- Noções de APIs e integração de serviços
+- Interesse em desenvolvimento de aplicações com IA
+
+## Metodologia
+
+O curso combina:
+- **Teoria fundamentada** com explicações claras e analogias práticas
+- **Implementação hands-on** com código Python e LangChain v1.0
+- **Projetos práticos** conectando teoria com aplicações reais
+- **Progressão gradual** dos conceitos básicos até aplicações avançadas
+- **Foco em produção** com deploy e monitoramento
+- **Comparação de versões** para entender evolução da framework
+- **Visualizações interativas** para compreensão de fluxos complexos
+- **Exemplos do mundo real** com casos de uso práticos
+
+## Tecnologias Utilizadas
+
+### 🤖 Modelos de Linguagem
+- **Google Gemini 2.0 Flash** (modelo principal do curso)
+- **OpenAI GPT** (comparações e alternativas)
+- **Anthropic Claude** (exemplos adicionais)
+
+### 🔧 Frameworks e Bibliotecas
+- **LangChain v1.0** (framework principal)
+- **LangGraph** (fluxos complexos)
+- **LangSmith** (monitoramento e debugging)
+- **Streamlit** (deploy e interfaces web)
+
+### 💾 Armazenamento e Processamento
+- **FAISS** (vector stores)
+- **Chroma** (bases de dados vetoriais)
+- **Pinecone** (vector database em nuvem)
+- **PyPDF** (processamento de documentos)
+
+### 🌐 APIs e Integrações
+- **Google AI API** (Gemini)
+- **OpenAI API** (GPT)
+- **Wikipedia API** (ferramentas de busca)
+- **APIs customizadas** (exemplos práticos)
+
+## Notebooks Gerados
+
+Total de notebooks: 15
+
+1. [modulo-01-introdução---o-que-é-langchain,-por-que-ele-ajuda-muito-e-o-que-vamos-ver-no-curso?-notebook.ipynb](modulo-01-introdução---o-que-é-langchain,-por-que-ele-ajuda-muito-e-o-que-vamos-ver-no-curso?-notebook.ipynb)
+2. [modulo-02-chatmodel-(gemini-2.0-flash-será-usado-no-curso-todo,-mas-temos-que-aprender-outras-opções),-runnables-e-lcel-notebook.ipynb](modulo-02-chatmodel-(gemini-2.0-flash-será-usado-no-curso-todo,-mas-temos-que-aprender-outras-opções),-runnables-e-lcel-notebook.ipynb)
+3. [modulo-03-prompt-template-e-outputparses-notebook.ipynb](modulo-03-prompt-template-e-outputparses-notebook.ipynb)
+4. [modulo-04-chains-notebook.ipynb](modulo-04-chains-notebook.ipynb)
+5. [modulo-05-memory-systems-notebook.ipynb](modulo-05-memory-systems-notebook.ipynb)
+6. [modulo-06-document-loading-e-splitters-notebook.ipynb](modulo-06-document-loading-e-splitters-notebook.ipynb)
+7. [modulo-07-vector-store-e-embeddings-notebook.ipynb](modulo-07-vector-store-e-embeddings-notebook.ipynb)
+8. [modulo-08-rag-implementation-notebook.ipynb](modulo-08-rag-implementation-notebook.ipynb)
+9. [modulo-09-agents-e-tools-notebook.ipynb](modulo-09-agents-e-tools-notebook.ipynb)
+10. [modulo-10-projeto-final-1-notebook.ipynb](modulo-10-projeto-final-1-notebook.ipynb)
+11. [modulo-11-projeto-final-2-notebook.ipynb](modulo-11-projeto-final-2-notebook.ipynb)
+12. [modulo-12-deploy-e-produção-com-streamlit-notebook.ipynb](modulo-12-deploy-e-produção-com-streamlit-notebook.ipynb)
+13. [modulo-13-refazendo-tudo-que-vimos-mas-na-versão-v1.0---com-comparações-notebook.ipynb](modulo-13-refazendo-tudo-que-vimos-mas-na-versão-v1.0---com-comparações-notebook.ipynb)
+14. [modulo-14-e-o-langgraph?-notebook.ipynb](modulo-14-e-o-langgraph?-notebook.ipynb)
+15. [modulo-15-e-o-langsmith?-notebook.ipynb](modulo-15-e-o-langsmith?-notebook.ipynb)
